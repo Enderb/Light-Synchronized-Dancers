@@ -5,7 +5,7 @@
 ## Project Overview
 The purpose of this project was to create a wearable technology that could be used in a dance show. The end product was two costumes that transform the dancers wearing them into a display and an actuator. Each costume has two LED strips and two accelerometers. Costume A has two LED strips on the arms, and two accelerometers on the legs, in order to track leg movements. Costume B has two LED strips on the legs, and two accelerometers on the arms, in order to track arm movements. The main idea is that when the dancer wearing costume A moves their legs, the lights on the other dancer lights up, and when the dancer wearing costume B moves their arms, the lights on the other dancer also light up. The LEDs light up differently depending on the motion the other dancer is doing. In this way, the dancers could have a way to communicate through the lights, and eventually synchronize using their movement and the lights. As you mentioned earlier, my final product ended up as more of a pre-prototype. However, I was able to use the product to show the idea to a choreographer and start the conversation on what a piece using this wearable could look like. These conversations will be used to iterate on the design. This pre-prototype has also taught me many things about making such a wearable, and I’ll be able to take these learnings to make the next iteration better and more durable.
 
-![Prototype of costume A](images/Costume_A.jpg)
+![Prototype of costume A](images/Costume_A.JPG)
 
 ## The Build
 Included with this document are the two Arduino sketches used to power the costumes. 
@@ -46,3 +46,4 @@ This prototype will need to be iterated on before the costumes can be used in a 
 * The wiring was fragile and would break when the costumes were transported. This could be fixed by using conductive thread. However, this may not have the same aesthetics that people liked about the prototype (exposed wires making the wearer seem like a cyborg)
 * All data availabe was being published to the MQTT channels, instead of only communicating important changes
 * The connection through MQTT was too laggy for data to be passed instantly at all times. A possible alternative would be to create a mess between the microcontrollers and have direct communiaction
+* While attaching the LEDs to the costumes with velcro was great for prototyping, it would be best for the durability of the costume to sew the LEDs to the costume, or find another way to more permanently attach the components
